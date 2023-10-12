@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<label for="fromDate">Select From Date:</label>
+        <input type="date" id="fromDate" name="fromDate">
+        <img src="calendar-icon.png" alt="Calendar Icon">
+        
+        <label for="toDate">Select To Date:</label>
+        <input type="date" id="toDate" name="toDate">
+        <img src="calendar-icon.png" alt="Calendar Icon">
+        <br>
+
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject">
+            <option value="subject1">Subject 1</option>
+            <option value="subject2">Subject 2</option>
+            <option value="subject3">Subject 3</option>
+        </select>
+        <br>
+
+        <table>
+            <tr>
+                <th>Reminder Name</th>
+                <th>Reminder Subject</th>
+                <th>Reminder Description</th>
+                <th>Email Address</th>
+                <th>Contact No</th>
+                <th>SMS No</th>
+                <th>Status</th>
+                <th>Recurrence Frequency</th>
+                <th>Select for Further Operations</th>
+            </tr>
+            <tr>
+                <td>Reminder 1</td>
+                <td>Subject 1</td>
+                <td>Description 1</td>
+                <td>Email 1</td>
+                <td>Contact 1</td>
+                <td>SMS 1</td>
+                <td>Active</td>
+                <td>
+                    <input type="checkbox" name="recurrence1" value="7 Days"> 7 Days
+                </td>
+                <td>
+                    <input type="checkbox" name="selectReminder1">
+                </td>
+            </tr>
+            <tr>
+                <td>Reminder 2</td>
+                <td>Subject 2</td>
+                <td>Description 2</td>
+                <td>Email 2</td>
+                <td>Contact 2</td>
+                <td>SMS 2</td>
+                <td>Inactive</td>
+                <td>
+                    <input type="checkbox" name="recurrence2" value="5 Days"> 5 Days
+                </td>
+                <td>
+                    <input type="checkbox" name="selectReminder2">
+                </td>
+            </tr>
+            <!-- Repeat rows for more reminders -->
+        </table>
+        <br><a href="Set.html">Set Remainder</a>
+		<a href="Modify.html">Modify Remainder</a>
+		<a href="disable.html">Disable Remainder</a>
+		<a href="Enable.html">Enable Remainder</a>
+        <a href="login.html">Retry</a>
+</body>
+</html>
